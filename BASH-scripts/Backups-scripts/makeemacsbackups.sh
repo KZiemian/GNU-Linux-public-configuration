@@ -14,7 +14,7 @@ EMACSLISPFILESPATH="$EMACSDIRPATH/elisp"
 
 # Paths to Emacs repository directories
 EMACSREPOSITORYPATH="$HOME/GitHub-repositories/Various-repositories/Emacs-configuration"
-DOTEMACSREPOSITORYPATH="$EMACSREPOSITORYPATH/.emacs.d/"
+EMACSREPODOTDIRPATH="$EMACSREPOSITORYPATH/.emacs.d/"
 
 
 
@@ -24,7 +24,7 @@ DOTEMACSREPOSITORYPATH="$EMACSREPOSITORYPATH/.emacs.d/"
 ####################
 # Synchronization of Emacs files
 
-rsync $EMACSDIRPATH/init.el $DOTEMACSREPOSITORYPATH
+rsync $EMACSDIRPATH/init.el $EMACSREPODOTDIRPATH
 
 
 # Synchronization of org configuration files
@@ -33,19 +33,19 @@ rsync $EMACSORGCONFDIRPATH/personal-information.org \
       $HOME/Private-backups/Emacs-backups
 
 rsync $EMACSORGCONFDIRPATH/configuration-basic.org \
-      $DOTEMACSREPOSITORYPATH/Configuration-org
+      $EMACSREPODOTDIRPATH/Configuration-org
 
 rsync $EMACSORGCONFDIRPATH/general-packages.org \
-      $DOTEMACSREPOSITORYPATH/Configuration-org
+      $EMACSREPODOTDIRPATH/Configuration-org
 
 rsync $EMACSORGCONFDIRPATH/specialized-packages.org \
-      $DOTEMACSREPOSITORYPATH/Configuration-org
+      $EMACSREPODOTDIRPATH/Configuration-org
 
 rsync $EMACSORGCONFDIRPATH/configuration-LaTeX.org \
-      $DOTEMACSREPOSITORYPATH/Configuration-org
+      $EMACSREPODOTDIRPATH/Configuration-org
 
 rsync $EMACSORGCONFDIRPATH/programming-languages.org \
-      $DOTEMACSREPOSITORYPATH/Configuration-org
+      $EMACSREPODOTDIRPATH/Configuration-org
 
 
 
@@ -54,4 +54,4 @@ rsync $EMACSORGCONFDIRPATH/programming-languages.org \
 # Synchronization of `customize.el' file
 
 rsync $EMACSDIRPATH/Customize-file/customize.el \
-      $DOTEMACSREPOSITORYPATH/Customize-file
+      $EMACSREPODOTDIRPATH/Customize-file
