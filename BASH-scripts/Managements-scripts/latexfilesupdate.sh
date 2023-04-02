@@ -319,12 +319,12 @@ rsync $LATEXFILEPATH $DEUSPATH
 
 
 # ####################
-# # Synchronization of file "HistoryBooks.bib"
-# LATEXFILEPATH="$BIBLIOGRAPHYPATH/HistoryBooks.bib"
+# Synchronization of file "HistoryBooks.bib"
+LATEXFILEPATH="$BIBLIOGRAPHYPATH/HistoryBooks.bib"
 
 
-# # History directory
-# rsync $LATEXFILEPATH $HISTORYPATH
+# History directory
+rsync $LATEXFILEPATH $HISTORYPATH
 # ####################
 
 
