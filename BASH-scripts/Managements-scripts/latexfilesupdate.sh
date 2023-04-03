@@ -376,8 +376,8 @@ rsync $LATEXFILEPATH $THEORYOFCOMPUTATIONPATH
 # # Arithmetics and number theory directory
 # rsync $LATEXFILEPATH $ARITHMETICSANDNUMBERTHEORYPATH
 
-# # Automata and formal languages theory directory
-# rsync $LATEXFILEPATH $AUTOMATAANDFORMALLANGUAGESTHEORYPATH
+# Automata and formal languages theory directory
+rsync $LATEXFILEPATH $AUTOMATAANDFORMALLANGUAGESTHEORYPATH
 
 # Category theory directory
 rsync $LATEXFILEPATH $CATEGORYTHEORYPATH
@@ -645,8 +645,8 @@ rsync $LATEXFILEPATH $THEORYOFCOMPUTATIONPATH
 # # Arithmetics and number theory directory
 # rsync $LATEXFILEPATH $ARITHMETICSANDNUMBERTHEORYPATH
 
-# # Automata and formal languages theory directory
-# rsync $LATEXFILEPATH $AUTOMATAANDFORMALLANGUAGESTHEORYPATH
+# Automata and formal languages theory directory
+rsync $LATEXFILEPATH $AUTOMATAANDFORMALLANGUAGESTHEORYPATH
 
 # Category theory directory
 rsync $LATEXFILEPATH $CATEGORYTHEORYPATH
