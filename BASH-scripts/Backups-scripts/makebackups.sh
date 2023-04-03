@@ -10,6 +10,7 @@ BACKUPSREPOPATH="$HOME/GitHub-repositories/Various-repositories/GNU-Linux-public
 EMACSBOOKMARKSBACKUPSPATH="$EMACSBACKUPSPATH/Emacs-bookmarks"
 EMACSELISPFILESBACKUPSPATH="$EMACSBACKUPSPATH/Elisp-files"
 
+GOODTHINGSDIRPATH="$HOME/Good-things"
 
 
 
@@ -75,3 +76,16 @@ rsync $SYSTEMBACKUPSSCRIPTSPATH/makespecialbackups.sh \
 
 rsync $SYSTEMMANAGEMENTSSCRIPTSPATH/latexfilesupdate.sh \
       $MANAGEMENTSSCRIPTSPATH
+
+
+
+####################
+# Synchronization of files for creating plots
+
+
+
+rsync $GOODTHINGSDIRPATH/Various-plots/Masa-ciala.go \
+      $PRIVATEBACKUPSPATH/Good-things/Various-plots
+
+rsync $GOODTHINGSDIRPATH/Various-plots/Ilosc-zrobionych-rzeczy.go \
+      $PRIVATEBACKUPSPATH/Good-things/Various-plots
