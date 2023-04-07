@@ -698,8 +698,8 @@ rsync $LATEXFILEPATH $THEORYOFCOMPUTATIONPATH
 # # Algebra path
 # rsync $LATEXFILEPATH $ALGEBRAPATH
 
-# # Arithmetics and number theory directory
-# rsync $LATEXFILEPATH $ARITHMETICSANDNUMBERTHEORYPATH
+# Arithmetics and number theory directory
+rsync $LATEXFILEPATH $ARITHMETICSANDNUMBERTHEORYPATH
 
 # Automata and formal languages theory directory
 rsync $LATEXFILEPATH $AUTOMATAANDFORMALLANGUAGESTHEORYPATH
@@ -761,8 +761,8 @@ rsync $LATEXFILEPATH $ANALYSISOFEXPERIMENTALDATA
 # Condensed matter physics directory
 rsync $LATEXFILEPATH $CONDENSEDMATTERPHYSICSPATH
 
-# # Introductions to physics directory
-# rsync $LATEXFILEPATH $INTRODUCTIONSTOPHYSICSPATH
+# Introductions to physics directory
+rsync $LATEXFILEPATH $INTRODUCTIONSTOPHYSICSPATH
 
 # # Mathematical physics directory
 # rsync $LATEXFILEPATH $MATHEMATICALPHYSICSPATH
@@ -779,11 +779,11 @@ rsync $LATEXFILEPATH $PHYSICSANDOTHERDISCIPLINESPATH
 # Physics of spacetime directory
 rsync $LATEXFILEPATH $PHYSICSOFSPACETIMEPATH
 
-# # Quantum mechanics directory
-# rsync $LATEXFILEPATH $QUANTUMMECHANICSPATH
+# Quantum mechanics directory
+rsync $LATEXFILEPATH $QUANTUMMECHANICSPATH
 
-# # QFT directory
-# rsync $LATEXFILEPATH $QFTPATH
+# QFT directory
+rsync $LATEXFILEPATH $QFTPATH
 
 # # Thermostatic, thermodynamics and statistical physics
 # rsync $LATEXFILEPATH $TERMOSTATICSETCPATH
