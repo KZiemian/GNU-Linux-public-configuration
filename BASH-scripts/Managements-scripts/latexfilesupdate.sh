@@ -52,6 +52,9 @@ VARIOUSSCIENCESPATH="$WRITINGREPOPATH/Nauki-rozne-bledy-i-uwagi"
 VARIOUSWORKSPATH="$ERRORSANDCOMMENTSPATH/Rozne-dziela-bledy-i-uwagi"
 
 
+# Path to the directory of "Various things to keep at hand"
+VARIOUSTHINGSTOKEEPATHANDPATH="$HOME/GitHub-repositories/Various-repositories/Various-things-to-keep-at-hand"
+
 
 ##########
 # Directories with various useful LaTeX files
@@ -713,8 +716,8 @@ rsync $LATEXFILEPATH $CATEGORYTHEORYPATH
 # # Differential equations directory
 # rsync $LATEXFILEPATH $DIFFERENTIALEQUATIONSPATH
 
-# # Differential geometry directory
-# rsync $LATEXFILEPATH $DIFFERENTIALGEOMETRYPATH
+# Differential geometry directory
+rsync $LATEXFILEPATH $DIFFERENTIALGEOMETRYPATH
 
 # # Functional analysis directory
 # rsync $LATEXFILEPATH $FUNCTIONALANALYSISPATH
@@ -880,7 +883,7 @@ rsync $LATEXFILEPATH $ALGORITHMSPATH
 # rsync $LATEXFILEPATH $LOGICANDSETTHEORYPATH
 
 
-##########
+####################
 # Mathematical analysis/calculus repository
 
 rsync $LATEXFILEPATH $MATHEMATICALANALYSISPATH
@@ -949,6 +952,15 @@ rsync $LATEXFILEPATH \
 # # Various notes directories
 
 # rsync $LATEXFILEPATH $NOTESONEPATH
+
+
+####################
+# Reprositories with various materials, that I keep together to make
+# using them more managable.
+
+rsync $LATEXFILEPATH $VARIOUSTHINGSTOKEEPATHANDPATH/Problemy-do-zrobienia
+
+
 ##############################
 
 
