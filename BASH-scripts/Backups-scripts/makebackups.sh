@@ -30,8 +30,8 @@ MANAGEMENTSSCRIPTSPATH="$BACKUPSREPOPATH/BASH-scripts/Managements-scripts"
 GNULINUXCONFBACKUPSPATH="$BACKUPSREPOPATH/GNU-Linux-public-configuration"
 
 # Path to directory with private things
-PRIVATEBACKUPSPATH="$HOME/Private-backups/"
-PRIVATEBACKUPSBASHBASCKUPSSCRIPTSPATH="$HOME/Private-backups/BASH-scripts/Backups-scripts"
+PRIVATEBACKUPSPATH="$HOME/Private-things/"
+PRIVATEBACKUPSBASHBASCKUPSSCRIPTSPATH="$HOME/Private-things/BASH-scripts/Backups-scripts"
 
 
 
@@ -76,16 +76,3 @@ rsync $SYSTEMBACKUPSSCRIPTSPATH/makespecialbackups.sh \
 
 rsync $SYSTEMMANAGEMENTSSCRIPTSPATH/latexfilesupdate.sh \
       $MANAGEMENTSSCRIPTSPATH
-
-
-
-####################
-# Synchronization of files for creating plots
-
-
-
-rsync $GOODTHINGSDIRPATH/Various-plots/Masa-ciala.go \
-      $PRIVATEBACKUPSPATH/Good-things/Various-plots
-
-rsync $GOODTHINGSDIRPATH/Various-plots/Ilosc-zrobionych-rzeczy.go \
-      $PRIVATEBACKUPSPATH/Good-things/Various-plots

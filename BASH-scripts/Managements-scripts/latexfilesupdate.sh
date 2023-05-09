@@ -39,6 +39,9 @@ EXERCISESLISTSPATH="$HOME/Good-things/Listy-zadań"
 ####################
 # Path to main Git repositories of LaTeX files directories
 
+# Path to the directory of drawings and charts
+DRAWINGSANDCHARTSPATH="$HOME/GitHub-repositories/Various-repositories/Rysunki-i-wykresy/"
+
 # Path to the directory of functional analysis repository
 FUNCTIONALANALYSISPATH="$ERRORSANDCOMMENTSPATH/Analiza-funkcjonalna-bledy-i-uwagi"
 
@@ -660,6 +663,9 @@ rsync $LATEXFILEPATH $THEORYOFCOMPUTATIONPATH
 # # Computer science excercises direcotry
 # rsync $LATEXFILEPATH $COMPUTERSCIENCEEXERCISESPATH
 
+# Drawings and charts directory
+rsync $LATEXFILEPATH $DRAWINGSANDCHARTSPATH/Matematyka-rysunki-i-wykresy
+
 # # Economics directory
 # rsync $LATEXFILEPATH $ECONOMICSPATH
 
@@ -861,8 +867,8 @@ rsync $LATEXFILEPATH $ALGORITHMSPATH
 # # Automata and formal languages theory path
 # rsync $LATEXFILEPATH $AUTOMATAANDFORMALLANGUAGESTHEORYPATH
 
-# # Category theory directory
-# rsync $LATEXFILEPATH $CATEGORYTHEORYPATH
+# Category theory directory
+rsync $LATEXFILEPATH $CATEGORYTHEORYPATH
 
 # # Combinatorics directory
 # rsync $LATEXFILEPATH $COMBINATORICSPATH
@@ -986,6 +992,9 @@ rsync $LATEXFILEPATH $VARIOUSTHINGSTOKEEPATHANDPATH/Problemy-do-zrobienia
 LATEXFILEPATH="$TIKZFILESPATH/TikZPics.sty"
 
 
+# Drawings and charts directory
+rsync $LATEXFILEPATH $DRAWINGSANDCHARTSPATH/Matematyka-rysunki-i-wykresy
+
 ##########
 # Mathematical directories
 
@@ -1020,6 +1029,10 @@ rsync $LATEXFILEPATH \
 # Synchronization of file "TikZStyles.sty"
 # It contains styles for drawing basic graphics elements
 LATEXFILEPATH="$TIKZFILESPATH/TikZStyles.sty"
+
+
+# Drawings and charts directory
+rsync $LATEXFILEPATH $DRAWINGSANDCHARTSPATH/Matematyka-rysunki-i-wykresy
 
 
 ####################
