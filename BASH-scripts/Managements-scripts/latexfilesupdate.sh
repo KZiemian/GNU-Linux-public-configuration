@@ -12,12 +12,18 @@
 
 # Path to the directory with bibliographies and other LaTeX files
 SPECIALLATEXFILESPATH="$HOME/GitHub-repositories/Writing-repositories/Nauki-rozne-bledy-i-uwagi/Pliki-LaTeXa"
+
 # Path to the main directory with LaTeX files containing errors found
 # in books and other works and commentaries to these works.
 WRITINGREPOPATH="$HOME/GitHub-repositories/Writing-repositories"
 ERRORSANDCOMMENTSPATH="$HOME/GitHub-repositories/Writing-repositories/Błędy-i-uwagi"
+
 # Path to directory with list of excercises
 EXERCISESLISTSPATH="$HOME/Good-things/Listy-zadań"
+
+# Path to various directories currently used.
+CASIMIREFFECTPATH="$HOME/Efekt-Casimira-praca-przegladowa"
+
 
 
 ##############################
@@ -556,6 +562,13 @@ rsync $LATEXFILEPATH $PHYSICSOFSPACETIMEPATH
 
 # # Very simple books about science directory
 # rsync $LATEXFILEPATH $VERYSIMPLEBOOKSABOUTSCIENCEPATH
+
+
+##########
+# Currently used directories
+
+rsync $LATEXFILEPATH $CASIMIREFFECTPATH
+
 # ####################
 
 
@@ -611,6 +624,81 @@ rsync $LATEXFILEPATH $PHYSICSOFSPACETIMEPATH
 
 
 
+
+
+
+
+
+# ############################
+# Synchronization of file "PhilNaturArticles.bib"
+LATEXFILEPATH="$BIBLIOGRAPHYPATH/PhilNaturArticles.bib"
+
+
+
+# ##########
+# # Mathematical directories
+
+# # Functional analysis directory
+# rsync $LATEXFILEPATH $FUNCTIONALANALYSISPATH
+# ##########
+
+
+
+# ##########
+# Physics directories
+
+# Analysis of experimatal data directory
+# rsync $LATEXFILEPATH $ANALYSISOFEXPERIMENTALDATA
+
+# # Introductions to physics directory
+# rsync $LATEXFILEPATH $INTRODUCTIONSTOPHYSICSPATH
+
+# # Clerk Maxwell electrodynamics
+# rsync $LATEXFILEPATH $CLERKMAXWELLELECTRODYNAMICSPATH
+
+# # Condensed matter physics path
+# rsync $LATEXFILEPATH $CONDENSEDMATTERPHYSICSPATH
+
+# # Mathematical physics directory
+# rsync $LATEXFILEPATH $MATHEMATICALPHYSICSPATH
+
+# Newtonian mechanics directory
+# rsync $LATEXFILEPATH $NEWTONIANMECHANICSPATH
+
+ # Physics and other disciplines directory
+# rsync $LATEXFILEPATH $PHYSICSANDOTHERDISCIPLINESPATH
+
+# # Physics excercises directory
+# rsync $LATEXFILEPATH $PHYSICSEXERCISESPATH
+
+# # Books with physics excercise directory
+# rsync $LATEXFILEPATH $PHYSICSBOOKSWITHEXERCISESPATH
+
+# Physics of spacetime directory
+# rsync $LATEXFILEPATH $PHYSICSOFSPACETIMEPATH
+
+# # QFT directory
+# rsync $LATEXFILEPATH $QFTPATH
+
+# # Quantum mechanics directory
+# rsync $LATEXFILEPATH $QUANTUMMECHANICSPATH
+
+# # Thermostatic, thermodynamics and statistical physics
+# rsync $LATEXFILEPATH $TERMOSTATICSETCPATH
+# ##########
+
+
+
+# # Very simple books about science directory
+# rsync $LATEXFILEPATH $VERYSIMPLEBOOKSABOUTSCIENCEPATH
+
+
+##########
+# Currently used directories
+
+rsync $LATEXFILEPATH $CASIMIREFFECTPATH
+
+# ####################
 
 
 
@@ -811,6 +899,12 @@ rsync $LATEXFILEPATH $QFTPATH
 # rsync $LATEXFILEPATH $VARIOUSBOOKSPATH
 
 
+##########
+# Currently used directories
+
+rsync $LATEXFILEPATH $CASIMIREFFECTPATH
+
+
 ##############################
 
 
@@ -965,6 +1059,12 @@ rsync $LATEXFILEPATH \
 # using them more managable.
 
 rsync $LATEXFILEPATH $VARIOUSTHINGSTOKEEPATHANDPATH/Problemy-do-zrobienia
+
+
+##########
+# Currently used directories
+
+rsync $LATEXFILEPATH $CASIMIREFFECTPATH
 
 
 ##############################
