@@ -299,22 +299,22 @@ VERYSIMPLEBOOKSABOUTSCIENCEPATH="$VARIOUSSCIENCESPATH/Pozostałe-dziedziny-błę
 
 
 
-##############################
-# Synchronization of file "DEUSBooks.bib"
-LATEXFILEPATH="$BIBLIOGRAPHYPATH/DEUSBooks.bib"
+# ##############################
+# # Synchronization of file "DEUSBooks.bib"
+# LATEXFILEPATH="$BIBLIOGRAPHYPATH/DEUSBooks.bib"
 
 
-####################
-# DEUS directory
-rsync $LATEXFILEPATH $DEUSPATH
-####################
+# ####################
+# # DEUS directory
+# rsync $LATEXFILEPATH $DEUSPATH
+# ####################
 
 
 
-####################
-# Philosophy directory
-rsync $LATEXFILEPATH $PHILOSOPHYPATH
-####################
+# ####################
+# # Philosophy directory
+# rsync $LATEXFILEPATH $PHILOSOPHYPATH
+# ####################
 
 
 
@@ -629,76 +629,6 @@ rsync $LATEXFILEPATH $CASIMIREFFECTPATH
 
 
 
-# ############################
-# Synchronization of file "PhilNaturArticles.bib"
-LATEXFILEPATH="$BIBLIOGRAPHYPATH/PhilNaturArticles.bib"
-
-
-
-# ##########
-# # Mathematical directories
-
-# # Functional analysis directory
-# rsync $LATEXFILEPATH $FUNCTIONALANALYSISPATH
-# ##########
-
-
-
-# ##########
-# Physics directories
-
-# Analysis of experimatal data directory
-# rsync $LATEXFILEPATH $ANALYSISOFEXPERIMENTALDATA
-
-# # Introductions to physics directory
-# rsync $LATEXFILEPATH $INTRODUCTIONSTOPHYSICSPATH
-
-# # Clerk Maxwell electrodynamics
-# rsync $LATEXFILEPATH $CLERKMAXWELLELECTRODYNAMICSPATH
-
-# # Condensed matter physics path
-# rsync $LATEXFILEPATH $CONDENSEDMATTERPHYSICSPATH
-
-# # Mathematical physics directory
-# rsync $LATEXFILEPATH $MATHEMATICALPHYSICSPATH
-
-# Newtonian mechanics directory
-# rsync $LATEXFILEPATH $NEWTONIANMECHANICSPATH
-
- # Physics and other disciplines directory
-# rsync $LATEXFILEPATH $PHYSICSANDOTHERDISCIPLINESPATH
-
-# # Physics excercises directory
-# rsync $LATEXFILEPATH $PHYSICSEXERCISESPATH
-
-# # Books with physics excercise directory
-# rsync $LATEXFILEPATH $PHYSICSBOOKSWITHEXERCISESPATH
-
-# Physics of spacetime directory
-# rsync $LATEXFILEPATH $PHYSICSOFSPACETIMEPATH
-
-# # QFT directory
-# rsync $LATEXFILEPATH $QFTPATH
-
-# # Quantum mechanics directory
-# rsync $LATEXFILEPATH $QUANTUMMECHANICSPATH
-
-# # Thermostatic, thermodynamics and statistical physics
-# rsync $LATEXFILEPATH $TERMOSTATICSETCPATH
-# ##########
-
-
-
-# # Very simple books about science directory
-# rsync $LATEXFILEPATH $VERYSIMPLEBOOKSABOUTSCIENCEPATH
-
-
-##########
-# Currently used directories
-
-rsync $LATEXFILEPATH $CASIMIREFFECTPATH
-
-# ####################
 
 
 
@@ -807,8 +737,8 @@ rsync $LATEXFILEPATH $CATEGORYTHEORYPATH
 # # Combinatorics directory
 # rsync $LATEXFILEPATH $COMBINATORICSPATH
 
-# # Differential equations directory
-# rsync $LATEXFILEPATH $DIFFERENTIALEQUATIONSPATH
+# Differential equations directory
+rsync $LATEXFILEPATH $DIFFERENTIALEQUATIONSPATH
 
 # Differential geometry directory
 rsync $LATEXFILEPATH $DIFFERENTIALGEOMETRYPATH
@@ -970,8 +900,8 @@ rsync $LATEXFILEPATH $CATEGORYTHEORYPATH
 # # Books with mathematical exercises directory
 # rsync $LATEXFILEPATH $MATHBOOKSWITHEXERCISESPATH
 
-# # Differential equations directory
-# rsync $LATEXFILEPATH $DIFFERENTIALEQUATIONSPATH
+# Differential equations directory
+rsync $LATEXFILEPATH $DIFFERENTIALEQUATIONSPATH
 
 # # Differential geometry directory
 # rsync $LATEXFILEPATH $DIFFERENTIALGEOMETRYPATH
@@ -1072,10 +1002,10 @@ rsync $LATEXFILEPATH $CASIMIREFFECTPATH
 
 
 
-# ####################
-# # Synchronization of file "functionalanalysiscommands.sty"
-# # It contains various macros for symbols that often appeare in the context
-# # of functional analysis
+####################
+# Synchronization of file "functionalanalysiscommands.sty"
+# It contains various macros for symbols that often appeare in the context
+# of functional analysis
 # LATEXFILEPATH="$SPECIALLATEXFILESPATH/functionalanalysiscommands.sty"
 
 
@@ -1086,32 +1016,42 @@ rsync $LATEXFILEPATH $CASIMIREFFECTPATH
 
 
 
-# ##############################
-# # Synchronization of file "TikZPics.sty"
-# # It contains TikZ pics with various important shapes.
-# LATEXFILEPATH="$TIKZFILESPATH/TikZPics.sty"
+##############################
+# Synchronization of file "TikZPics.sty"
+# It contains TikZ pics with various important shapes.
+LATEXFILEPATH="$TIKZFILESPATH/TikZPics.sty"
 
 
-# # Drawings and charts directory
-# rsync $LATEXFILEPATH $DRAWINGSANDCHARTSPATH/Matematyka-rysunki-i-wykresy
+###############
+# Currently used directories
 
-# ##########
-# # Mathematical directories
-
-
-# # Category theory directory
-# rsync $LATEXFILEPATH $CATEGORYTHEORYPATH
-
-# # rsync $LATEXFILEPATH $FUNCTIONALANALYSISPATH
+rsync $LATEXFILEPATH $CASIMIREFFECTPATH
 
 
-# ##########
-# # Mathematical analysis/calculus repository
 
-# # rsync $LATEXFILEPATH $MATHEMATICALANALYSISPATH
 
-# rsync $LATEXFILEPATH \
-#       $MATHEMATICALANALYSISPATH/Analiza-zespolona-błędy-i-uwagi
+
+###############
+# Drawings and charts directory
+rsync $LATEXFILEPATH $DRAWINGSANDCHARTSPATH/Matematyka-rysunki-i-wykresy
+
+##########
+# Mathematical directories
+
+
+# Category theory directory
+rsync $LATEXFILEPATH $CATEGORYTHEORYPATH
+
+# rsync $LATEXFILEPATH $FUNCTIONALANALYSISPATH
+
+
+##########
+# Mathematical analysis/calculus repository
+
+# rsync $LATEXFILEPATH $MATHEMATICALANALYSISPATH
+
+rsync $LATEXFILEPATH \
+      $MATHEMATICALANALYSISPATH/Analiza-zespolona-błędy-i-uwagi
 
 # rsync $LATEXFILEPATH \
 #       $MATHEMATICALANALYSISPATH/Rachunek-wariacyjny-błędy-i-uwagi
@@ -1125,33 +1065,46 @@ rsync $LATEXFILEPATH $CASIMIREFFECTPATH
 
 
 
-# ##############################
-# # Synchronization of file "TikZStyles.sty"
-# # It contains styles for drawing basic graphics elements
-# LATEXFILEPATH="$TIKZFILESPATH/TikZStyles.sty"
+##############################
+# Synchronization of file "TikZStyles.sty"
+# It contains styles for drawing basic graphics elements
+LATEXFILEPATH="$TIKZFILESPATH/TikZStyles.sty"
 
 
-# # Drawings and charts directory
-# rsync $LATEXFILEPATH $DRAWINGSANDCHARTSPATH/Matematyka-rysunki-i-wykresy
+##########
+# Currently used directories
+
+rsync $LATEXFILEPATH $CASIMIREFFECTPATH
 
 
-# ####################
-# # Mathematical directories
 
 
-# # Category theory directory
-# rsync $LATEXFILEPATH $CATEGORYTHEORYPATH
 
-# # rsync $LATEXFILEPATH $FUNCTIONALANALYSISPATH
+##########
+# Drawings and charts directory
+rsync $LATEXFILEPATH $DRAWINGSANDCHARTSPATH/Matematyka-rysunki-i-wykresy
 
 
-# ##########
-# # Mathematical analysis/calculus repository
 
-# # rsync $LATEXFILEPATH $MATHEMATICALANALYSISPATH
 
-# rsync $LATEXFILEPATH \
-#       $MATHEMATICALANALYSISPATH/Analiza-zespolona-błędy-i-uwagi
+
+####################
+# Mathematical directories
+
+
+# Category theory directory
+rsync $LATEXFILEPATH $CATEGORYTHEORYPATH
+
+# rsync $LATEXFILEPATH $FUNCTIONALANALYSISPATH
+
+
+##########
+# Mathematical analysis/calculus repository
+
+# rsync $LATEXFILEPATH $MATHEMATICALANALYSISPATH
+
+rsync $LATEXFILEPATH \
+      $MATHEMATICALANALYSISPATH/Analiza-zespolona-błędy-i-uwagi
 
 # rsync $LATEXFILEPATH \
 #       $MATHEMATICALANALYSISPATH/Rachunek-wariacyjny-błędy-i-uwagi

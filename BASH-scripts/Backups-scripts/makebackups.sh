@@ -76,3 +76,6 @@ rsync $SYSTEMBACKUPSSCRIPTSPATH/makespecialbackups.sh \
 
 rsync $SYSTEMMANAGEMENTSSCRIPTSPATH/latexfilesupdate.sh \
       $MANAGEMENTSSCRIPTSPATH
+
+rsync $SYSTEMMANAGEMENTSSCRIPTSPATH/latexstylefilesupdate.sh \
+      $MANAGEMENTSSCRIPTSPATH

@@ -413,8 +413,8 @@ rsync $LATEXFILEPATH $CATEGORYTHEORYPATH
 # # Combinatorics directory
 # rsync $LATEXFILEPATH $COMBINATORICSPATH
 
-# # Differential equations directory
-# rsync $LATEXFILEPATH $DIFFERENTIALEQUATIONSPATH
+# Differential equations directory
+rsync $LATEXFILEPATH $DIFFERENTIALEQUATIONSPATH
 
 # rsync $LATEXFILEPATH $DIFFERENTIALGEOMETRYPATH
 
@@ -495,6 +495,81 @@ rsync $LATEXFILEPATH \
 ##########
 
 ##############################
+
+
+
+
+
+##############################
+# Synchronization of file "PhysicsBooks.bib"
+LATEXFILEPATH="$BIBLIOGRAPHYPATH/PhysicsBooks.bib"
+
+
+
+# ##########
+# # Mathematical directories
+
+# # Functional analysis directory
+# rsync $LATEXFILEPATH $FUNCTIONALANALYSISPATH
+# ##########
+
+
+
+# ##########
+# Physics directories
+
+# Analysis of experimatal data directory
+rsync $LATEXFILEPATH $ANALYSISOFEXPERIMENTALDATA
+
+# # Introductions to physics directory
+# rsync $LATEXFILEPATH $INTRODUCTIONSTOPHYSICSPATH
+
+# # Clerk Maxwell electrodynamics
+# rsync $LATEXFILEPATH $CLERKMAXWELLELECTRODYNAMICSPATH
+
+# # Condensed matter physics path
+# rsync $LATEXFILEPATH $CONDENSEDMATTERPHYSICSPATH
+
+# # Mathematical physics directory
+# rsync $LATEXFILEPATH $MATHEMATICALPHYSICSPATH
+
+# # Newtonian mechanics directory
+# rsync $LATEXFILEPATH $NEWTONIANMECHANICSPATH
+
+#  # Physics and other disciplines directory
+# rsync $LATEXFILEPATH $PHYSICSANDOTHERDISCIPLINESPATH
+
+# # Physics excercises directory
+# rsync $LATEXFILEPATH $PHYSICSEXERCISESPATH
+
+# # Books with physics excercise directory
+# rsync $LATEXFILEPATH $PHYSICSBOOKSWITHEXERCISESPATH
+
+# # Physics of spacetime directory
+# rsync $LATEXFILEPATH $PHYSICSOFSPACETIMEPATH
+
+# # QFT directory
+# rsync $LATEXFILEPATH $QFTPATH
+
+# # Quantum mechanics directory
+# rsync $LATEXFILEPATH $QUANTUMMECHANICSPATH
+
+# # Thermostatic, thermodynamics and statistical physics
+# rsync $LATEXFILEPATH $TERMOSTATICSETCPATH
+# ##########
+
+
+
+# # Very simple books about science directory
+# rsync $LATEXFILEPATH $VERYSIMPLEBOOKSABOUTSCIENCEPATH
+
+
+##########
+# Currently used directories
+
+rsync $LATEXFILEPATH $CASIMIREFFECTPATH
+
+# ####################
 
 
 
@@ -705,360 +780,68 @@ rsync $LATEXFILEPATH $CASIMIREFFECTPATH
 
 
 
-
-
-##############################
-# Synchronization of file "latexgeneralcommands.sty"
-# It contains various general purpose macros.
-LATEXFILEPATH="$SPECIALLATEXFILESPATH/latexgeneralcommands.sty"
-
-
-####################
-# DEUS directory
-rsync $LATEXFILEPATH $DEUSPATH
-####################
+# ############################
+# Synchronization of file "PhysicsArticles.bib"
+LATEXFILEPATH="$BIBLIOGRAPHYPATH/PhysicsArticles.bib"
 
 
 
-####################
-# Philosophy directory
-rsync $LATEXFILEPATH $PHILOSOPHYPATH
-####################
-
-
-
-##########
-# Computer science directories
-
-# Computer science directory
-rsync $LATEXFILEPATH $COMPUTERSCIENCEPATH
-
-# Algorithms directory
-rsync $LATEXFILEPATH $ALGORITHMSPATH
-
-# Theory of computation directory
-rsync $LATEXFILEPATH $THEORYOFCOMPUTATIONPATH
-##########
-
-
-
-# # Culture, analytics works directory
-# rsync $LATEXFILEPATH $CULTUREANALYSISPATH
-
-# # Comics and graphics novels directory
-# rsync $LATEXFILEPATH $COMICSGRAPHICNOVELSPATH
-
-# # Computer science excercises direcotry
-# rsync $LATEXFILEPATH $COMPUTERSCIENCEEXERCISESPATH
-
-# Drawings and charts directory
-rsync $LATEXFILEPATH $DRAWINGSANDCHARTSPATH/Matematyka-rysunki-i-wykresy
-
-# # Economics directory
-# rsync $LATEXFILEPATH $ECONOMICSPATH
-
-# # Essays and jurnalism directory
-# rsync $LATEXFILEPATH $ESSAYSANDJOURNALISMPATH
-
-# # History directory
-# rsync $LATEXFILEPATH $HISTORYPATH
-
-# # Linguistic directory
-# rsync $LATEXFILEPATH $LINGUISTICSPATH
-
-# # Books with mathematical exercises directory
-# rsync $LATEXFILEPATH $MATHBOOKSWITHEXERCISESPATH
-
-# # Lists of math excercises directory
-# rsync $LATEXFILEPATH $MATHEXERCISESPATH
-
-# # Physics excercises directory
-# rsync $LATEXFILEPATH $PHYSICSEXERCISESPATH
-
-# # Politology directory
-# rsync $LATEXFILEPATH $POLITOLOGYPATH
-
-# # Various books directory
-# rsync $LATEXFILEPATH $VARIOUSBOOKSPATH
-
-# # Very simple books about science directory
-# rsync $LATEXFILEPATH $VERYSIMPLEBOOKSABOUTSCIENCEPATH
-
-
-
-# ####################
-# Mathematical directories
-
-# # Analysis and numerical methods directory
-# rsync $LATEXFILEPATH $ANALYSISANDNUMERICALMETHODSPATH
-
-# # Algebra path
-# rsync $LATEXFILEPATH $ALGEBRAPATH
-
-# Arithmetics and number theory directory
-rsync $LATEXFILEPATH $ARITHMETICSANDNUMBERTHEORYPATH
-
-# Automata and formal languages theory directory
-rsync $LATEXFILEPATH $AUTOMATAANDFORMALLANGUAGESTHEORYPATH
-
-# Category theory directory
-rsync $LATEXFILEPATH $CATEGORYTHEORYPATH
-
-# # Combinatorics directory
-# rsync $LATEXFILEPATH $COMBINATORICSPATH
-
-# # Differential equations directory
-# rsync $LATEXFILEPATH $DIFFERENTIALEQUATIONSPATH
-
-# Differential geometry directory
-rsync $LATEXFILEPATH $DIFFERENTIALGEOMETRYPATH
+# ##########
+# # Mathematical directories
 
 # # Functional analysis directory
 # rsync $LATEXFILEPATH $FUNCTIONALANALYSISPATH
-
-# # Logic and set theory directory
-# rsync $LATEXFILEPATH $LOGICANDSETTHEORYPATH
-
-
-##########
-# Mathematical analysis/calculus repository
-
-rsync $LATEXFILEPATH $MATHEMATICALANALYSISPATH
-
-rsync $LATEXFILEPATH \
-      $MATHEMATICALANALYSISPATH/Analiza-zespolona-błędy-i-uwagi
-
-rsync $LATEXFILEPATH \
-      $MATHEMATICALANALYSISPATH/Rachunek-wariacyjny-błędy-i-uwagi
-
-##########
-
-
-# # Noncommutative geometry directory
-# rsync $LATEXFILEPATH $NONCOMMUTATIVEGEOMETRYPATH
-
-# # Probability theory directory
-# rsync $LATEXFILEPATH $PROBABILTYTHEORYPATH
-
-# # Set theory and topology directory
-# rsync $LATEXFILEPATH $SETTHEORYANDTOPOLOGYPATH
 # ##########
 
 
 
-##########
+# ##########
 # Physics directories
 
-# Analysis of experimental data directory
-rsync $LATEXFILEPATH $ANALYSISOFEXPERIMENTALDATA
+# Analysis of experimatal data directory
+# rsync $LATEXFILEPATH $ANALYSISOFEXPERIMENTALDATA
 
-# # Clerk Maxwell electrodynamics directory
+# # Introductions to physics directory
+# rsync $LATEXFILEPATH $INTRODUCTIONSTOPHYSICSPATH
+
+# # Clerk Maxwell electrodynamics
 # rsync $LATEXFILEPATH $CLERKMAXWELLELECTRODYNAMICSPATH
 
-# Condensed matter physics directory
-rsync $LATEXFILEPATH $CONDENSEDMATTERPHYSICSPATH
-
-# Introductions to physics directory
-rsync $LATEXFILEPATH $INTRODUCTIONSTOPHYSICSPATH
+# # Condensed matter physics path
+# rsync $LATEXFILEPATH $CONDENSEDMATTERPHYSICSPATH
 
 # # Mathematical physics directory
 # rsync $LATEXFILEPATH $MATHEMATICALPHYSICSPATH
 
-# # Newtonian mechanics directory
+# Newtonian mechanics directory
 # rsync $LATEXFILEPATH $NEWTONIANMECHANICSPATH
 
-# Physics and other disciplines
-rsync $LATEXFILEPATH $PHYSICSANDOTHERDISCIPLINESPATH
+ # Physics and other disciplines directory
+# rsync $LATEXFILEPATH $PHYSICSANDOTHERDISCIPLINESPATH
+
+# # Physics excercises directory
+# rsync $LATEXFILEPATH $PHYSICSEXERCISESPATH
 
 # # Books with physics excercise directory
 # rsync $LATEXFILEPATH $PHYSICSBOOKSWITHEXERCISESPATH
 
 # Physics of spacetime directory
-rsync $LATEXFILEPATH $PHYSICSOFSPACETIMEPATH
-
-# Quantum mechanics directory
-rsync $LATEXFILEPATH $QUANTUMMECHANICSPATH
-
-# QFT directory
-rsync $LATEXFILEPATH $QFTPATH
-
-# # Thermostatic, thermodynamics and statistical physics
-# rsync $LATEXFILEPATH $TERMOSTATICSETCPATH
-# ##########
-
-
-
-# # Various notes directories
-# rsync $LATEXFILEPATH $NOTESONEPATH
-
-# rsync $LATEXFILEPATH $NOTESTWOPATH
-
-
-
-# # Various books directory
-# rsync $LATEXFILEPATH $VARIOUSBOOKSPATH
-
-
-##########
-# Currently used directories
-
-rsync $LATEXFILEPATH $CASIMIREFFECTPATH
-
-
-##############################
-
-
-
-
-
-##############################
-# Synchronization of file "mathcommands.sty"
-# It contains macros for mathematics formulas.
-LATEXFILEPATH="$SPECIALLATEXFILESPATH/mathcommands.sty"
-
-
-####################
-# DEUS directory
-rsync $LATEXFILEPATH $DEUSPATH
-####################
-
-
-
-####################
-# Philosophy directory
-rsync $LATEXFILEPATH $PHILOSOPHYPATH
-####################
-
-
-
-####################
-# Computer science directories
-
-# Computer science directory
-# rsync $LATEXFILEPATH $COMPUTERSCIENCEPATH
-
-# Algorithms directory
-rsync $LATEXFILEPATH $ALGORITHMSPATH
-
-# Theory of computation directory
-# rsync $LATEXFILEPATH $THEORYOFCOMPUTATIONPATH
-####################
-
-
-
-# ##################
-# # Mathematical directories
-
-# # Algebra path
-# rsync $LATEXFILEPATH $ALGEBRAPATH
-
-# # Analysis and numerical methods directory
-# rsync $LATEXFILEPATH $ANALYSISANDNUMERICALMETHODSPATH
-
-# # Arithmetics and number theory directory
-# rsync $LATEXFILEPATH $ARITHMETICSANDNUMBERTHEORYPATH
-
-# # Automata and formal languages theory path
-# rsync $LATEXFILEPATH $AUTOMATAANDFORMALLANGUAGESTHEORYPATH
-
-# Category theory directory
-rsync $LATEXFILEPATH $CATEGORYTHEORYPATH
-
-# # Combinatorics directory
-# rsync $LATEXFILEPATH $COMBINATORICSPATH
-
-# # Books with mathematical exercises directory
-# rsync $LATEXFILEPATH $MATHBOOKSWITHEXERCISESPATH
-
-# # Differential equations directory
-# rsync $LATEXFILEPATH $DIFFERENTIALEQUATIONSPATH
-
-# # Differential geometry directory
-# rsync $LATEXFILEPATH $DIFFERENTIALGEOMETRYPATH
-
-# # Functional analysis path
-# rsync $LATEXFILEPATH $FUNCTIONALANALYSISPATH
-
-# # Logic and set theory directory
-# rsync $LATEXFILEPATH $LOGICANDSETTHEORYPATH
-
-
-####################
-# Mathematical analysis/calculus repository
-
-rsync $LATEXFILEPATH $MATHEMATICALANALYSISPATH
-
-rsync $LATEXFILEPATH \
-      $MATHEMATICALANALYSISPATH/Analiza-zespolona-błędy-i-uwagi
-
-rsync $LATEXFILEPATH \
-      $MATHEMATICALANALYSISPATH/Rachunek-wariacyjny-błędy-i-uwagi
-
-##########
-
-
-# # Noncommutative geometry directory
-# rsync $LATEXFILEPATH $NONCOMMUTATIVEGEOMETRYPATH
-
-# # Probability theory directory
-# rsync $LATEXFILEPATH $PROBABILTYTHEORYPATH
-
-# # Set theory and topology directory
-# rsync $LATEXFILEPATH $SETTHEORYANDTOPOLOGYPATH
-
-
-
-##########
-# Physics directories
-
-# # Analysis of experimental data directory
-# rsync $LATEXFILEPATH $ANALYSISOFEXPERIMENTALDATA
-
-# # Clerk Maxwell electrodynamics
-# rsync $LATEXFILEPATH $CLERKMAXWELLELECTRODYNAMICSPATH
-
-# # Condensed matter physics directory
-# rsync $LATEXFILEPATH $CONDENSEDMATTERPHYSICSPATH
-
-# # Introductions to physics directory
-# rsync $LATEXFILEPATH $INTRODUCTIONSTOPHYSICSPATH
-
-# # Mathematical physics directory
-# rsync $LATEXFILEPATH $MATHEMATICALPHYSICSPATH
-
-# # Newtonian mechanics directory
-# rsync $LATEXFILEPATH $NEWTONIANMECHANICSPATH
-
-# # Physics and other disciplines
-# rsync $LATEXFILEPATH $PHYSICSANDOTHERDISCIPLINESPATH
-
-# # Books with physics excercise directory
-# rsync $LATEXFILEPATH $PHYSICSBOOKSWITHEXERCISESPATH
-
-# # Physics of spacetime directory
 # rsync $LATEXFILEPATH $PHYSICSOFSPACETIMEPATH
-
-# # Quantum mechanics directory
-# rsync $LATEXFILEPATH $QUANTUMMECHANICSPATH
 
 # # QFT directory
 # rsync $LATEXFILEPATH $QFTPATH
 
+# # Quantum mechanics directory
+# rsync $LATEXFILEPATH $QUANTUMMECHANICSPATH
+
 # # Thermostatic, thermodynamics and statistical physics
 # rsync $LATEXFILEPATH $TERMOSTATICSETCPATH
-
-
 # ##########
-# # Various notes directories
-
-# rsync $LATEXFILEPATH $NOTESONEPATH
 
 
-####################
-# Reprositories with various materials, that I keep together to make
-# using them more managable.
 
-rsync $LATEXFILEPATH $VARIOUSTHINGSTOKEEPATHANDPATH/Problemy-do-zrobienia
+# # Very simple books about science directory
+# rsync $LATEXFILEPATH $VERYSIMPLEBOOKSABOUTSCIENCEPATH
 
 
 ##########
@@ -1066,100 +849,4 @@ rsync $LATEXFILEPATH $VARIOUSTHINGSTOKEEPATHANDPATH/Problemy-do-zrobienia
 
 rsync $LATEXFILEPATH $CASIMIREFFECTPATH
 
-
-##############################
-
-
-
-
 # ####################
-# # Synchronization of file "functionalanalysiscommands.sty"
-# # It contains various macros for symbols that often appeare in the context
-# # of functional analysis
-# LATEXFILEPATH="$SPECIALLATEXFILESPATH/functionalanalysiscommands.sty"
-
-
-# rsync $LATEXFILEPATH $FUNCTIONALANALYSISPATH
-# ####################
-
-
-
-
-
-# ##############################
-# # Synchronization of file "TikZPics.sty"
-# # It contains TikZ pics with various important shapes.
-# LATEXFILEPATH="$TIKZFILESPATH/TikZPics.sty"
-
-
-# # Drawings and charts directory
-# rsync $LATEXFILEPATH $DRAWINGSANDCHARTSPATH/Matematyka-rysunki-i-wykresy
-
-# ##########
-# # Mathematical directories
-
-
-# # Category theory directory
-# rsync $LATEXFILEPATH $CATEGORYTHEORYPATH
-
-# # rsync $LATEXFILEPATH $FUNCTIONALANALYSISPATH
-
-
-# ##########
-# # Mathematical analysis/calculus repository
-
-# # rsync $LATEXFILEPATH $MATHEMATICALANALYSISPATH
-
-# rsync $LATEXFILEPATH \
-#       $MATHEMATICALANALYSISPATH/Analiza-zespolona-błędy-i-uwagi
-
-# rsync $LATEXFILEPATH \
-#       $MATHEMATICALANALYSISPATH/Rachunek-wariacyjny-błędy-i-uwagi
-
-##########
-
-
-##############################
-
-
-
-
-
-# ##############################
-# # Synchronization of file "TikZStyles.sty"
-# # It contains styles for drawing basic graphics elements
-# LATEXFILEPATH="$TIKZFILESPATH/TikZStyles.sty"
-
-
-# # Drawings and charts directory
-# rsync $LATEXFILEPATH $DRAWINGSANDCHARTSPATH/Matematyka-rysunki-i-wykresy
-
-
-# ####################
-# # Mathematical directories
-
-
-# # Category theory directory
-# rsync $LATEXFILEPATH $CATEGORYTHEORYPATH
-
-# # rsync $LATEXFILEPATH $FUNCTIONALANALYSISPATH
-
-
-# ##########
-# # Mathematical analysis/calculus repository
-
-# # rsync $LATEXFILEPATH $MATHEMATICALANALYSISPATH
-
-# rsync $LATEXFILEPATH \
-#       $MATHEMATICALANALYSISPATH/Analiza-zespolona-błędy-i-uwagi
-
-# rsync $LATEXFILEPATH \
-#       $MATHEMATICALANALYSISPATH/Rachunek-wariacyjny-błędy-i-uwagi
-
-##########
-
-
-####################
-
-
-##########
