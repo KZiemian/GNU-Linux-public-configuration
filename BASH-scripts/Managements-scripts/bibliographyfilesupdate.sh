@@ -773,14 +773,14 @@ LATEXFILEPATH="$BIBLIOGRAPHYPATH/PhilNaturArticles.bib"
 
 rsync $LATEXFILEPATH $CASIMIREFFECTPATH
 
-# ####################
+####################
 
 
 
 
 
 
-# ############################
+############################
 # Synchronization of file "PhysicsArticles.bib"
 LATEXFILEPATH="$BIBLIOGRAPHYPATH/PhysicsArticles.bib"
 
