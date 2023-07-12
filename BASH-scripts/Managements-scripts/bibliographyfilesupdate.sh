@@ -370,7 +370,7 @@ rsync $LATEXFILEPATH $HISTORYPATH
 
 ##############################
 # Synchronization of file "MathComScienceBooks.bib"
-LATEXFILEPATH="$BIBLIOGRAPHYPATH/MathComScienceBooks.bib"
+LATEXFILEPATH="$BIBLIOGRAPHYPATH/MathematicsBooks.bib"
 
 
 
@@ -378,16 +378,16 @@ LATEXFILEPATH="$BIBLIOGRAPHYPATH/MathComScienceBooks.bib"
 # Computer science directories
 
 # Computer science directory
-rsync $LATEXFILEPATH $COMPUTERSCIENCEPATH
+# rsync $LATEXFILEPATH $COMPUTERSCIENCEPATH
 
 # Algorithms directory
-rsync $LATEXFILEPATH $ALGORITHMSPATH
+# rsync $LATEXFILEPATH $ALGORITHMSPATH
 
 # # Computer science excercises path
 # rsync $LATEXFILEPATH $COMPUTERSCIENCEEXERCISESPATH
 
 # Theory of computation directory
-rsync $LATEXFILEPATH $THEORYOFCOMPUTATIONPATH
+# rsync $LATEXFILEPATH $THEORYOFCOMPUTATIONPATH
 ###############
 
 
@@ -395,8 +395,8 @@ rsync $LATEXFILEPATH $THEORYOFCOMPUTATIONPATH
 ####################
 # Mathematical directories
 
-# # Algebra directory
-# rsync $LATEXFILEPATH $ALGEBRAPATH
+# Algebra directory
+rsync $LATEXFILEPATH $ALGEBRAPATH
 
 # # Analysis and numerical methods directory
 # rsync $LATEXFILEPATH $ANALYSISANDNUMERICALMETHODSPATH
@@ -473,8 +473,8 @@ rsync $LATEXFILEPATH $VERYSIMPLEBOOKSABOUTSCIENCEPATH
 
 
 ##############################
-# Synchronization of file "PhilBooks.bib"
-LATEXFILEPATH="$BIBLIOGRAPHYPATH/PhilBooks.bib"
+# Synchronization of file "PhilosophyBooks.bib"
+LATEXFILEPATH="$BIBLIOGRAPHYPATH/PhilosophyBooks.bib"
 
 
 # Philosophy directory
@@ -701,10 +701,7 @@ rsync $LATEXFILEPATH $CASIMIREFFECTPATH
 
 
 
-
-
-
-# ############################
+############################
 # Synchronization of file "PhilNaturArticles.bib"
 LATEXFILEPATH="$BIBLIOGRAPHYPATH/PhilNaturArticles.bib"
 
@@ -780,6 +777,24 @@ rsync $LATEXFILEPATH $CASIMIREFFECTPATH
 
 
 
+
+############################
+# Synchronization of file "AlgebraicQFTArticles.bib"
+LATEXFILEPATH="$BIBLIOGRAPHYPATH/AlgebraicQFTArticles.bib"
+
+
+##########
+# Currently used directories
+
+rsync $LATEXFILEPATH $CASIMIREFFECTPATH
+
+####################
+
+
+
+
+
+
 ############################
 # Synchronization of file "PhysicsArticles.bib"
 LATEXFILEPATH="$BIBLIOGRAPHYPATH/PhysicsArticles.bib"
@@ -840,7 +855,7 @@ LATEXFILEPATH="$BIBLIOGRAPHYPATH/PhysicsArticles.bib"
 
 
 
-# # Very simple books about science directory
+# Very simple books about science directory
 # rsync $LATEXFILEPATH $VERYSIMPLEBOOKSABOUTSCIENCEPATH
 
 
@@ -849,4 +864,84 @@ LATEXFILEPATH="$BIBLIOGRAPHYPATH/PhysicsArticles.bib"
 
 rsync $LATEXFILEPATH $CASIMIREFFECTPATH
 
-# ####################
+####################
+
+
+
+
+
+
+
+
+
+
+############################
+# Synchronization of file "CasimirEffectArticles.bib"
+LATEXFILEPATH="$BIBLIOGRAPHYPATH/CasimirEffectArticles.bib"
+
+
+
+# ##########
+# # Mathematical directories
+
+# # Functional analysis directory
+# rsync $LATEXFILEPATH $FUNCTIONALANALYSISPATH
+# ##########
+
+
+
+# ##########
+# Physics directories
+
+# Analysis of experimatal data directory
+# rsync $LATEXFILEPATH $ANALYSISOFEXPERIMENTALDATA
+
+# # Introductions to physics directory
+# rsync $LATEXFILEPATH $INTRODUCTIONSTOPHYSICSPATH
+
+# # Clerk Maxwell electrodynamics
+# rsync $LATEXFILEPATH $CLERKMAXWELLELECTRODYNAMICSPATH
+
+# # Condensed matter physics path
+# rsync $LATEXFILEPATH $CONDENSEDMATTERPHYSICSPATH
+
+# # Mathematical physics directory
+# rsync $LATEXFILEPATH $MATHEMATICALPHYSICSPATH
+
+# Newtonian mechanics directory
+# rsync $LATEXFILEPATH $NEWTONIANMECHANICSPATH
+
+ # Physics and other disciplines directory
+# rsync $LATEXFILEPATH $PHYSICSANDOTHERDISCIPLINESPATH
+
+# # Physics excercises directory
+# rsync $LATEXFILEPATH $PHYSICSEXERCISESPATH
+
+# # Books with physics excercise directory
+# rsync $LATEXFILEPATH $PHYSICSBOOKSWITHEXERCISESPATH
+
+# Physics of spacetime directory
+# rsync $LATEXFILEPATH $PHYSICSOFSPACETIMEPATH
+
+# # QFT directory
+# rsync $LATEXFILEPATH $QFTPATH
+
+# # Quantum mechanics directory
+# rsync $LATEXFILEPATH $QUANTUMMECHANICSPATH
+
+# # Thermostatic, thermodynamics and statistical physics
+# rsync $LATEXFILEPATH $TERMOSTATICSETCPATH
+# ##########
+
+
+
+# Very simple books about science directory
+# rsync $LATEXFILEPATH $VERYSIMPLEBOOKSABOUTSCIENCEPATH
+
+
+##########
+# Currently used directories
+
+rsync $LATEXFILEPATH $CASIMIREFFECTPATH
+
+####################

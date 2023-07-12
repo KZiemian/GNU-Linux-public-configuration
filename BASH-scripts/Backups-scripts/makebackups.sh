@@ -48,7 +48,7 @@ PRIVATEBACKUPSBASHBASCKUPSSCRIPTSPATH="$HOME/Private-things/BASH-scripts/Backups
 
 
 
-# ####################
+####################
 # # Synchronization of Emacs files
 
 # # Elisp files
@@ -74,7 +74,7 @@ rsync $SYSTEMBACKUPSSCRIPTSPATH/makespecialbackups.sh \
 # ####################
 # Synchronization of BASH scripts for managements of various files
 
-rsync $SYSTEMMANAGEMENTSSCRIPTSPATH/latexfilesupdate.sh \
+rsync $SYSTEMMANAGEMENTSSCRIPTSPATH/bibliographyfilesupdate.sh \
       $MANAGEMENTSSCRIPTSPATH
 
 rsync $SYSTEMMANAGEMENTSSCRIPTSPATH/latexstylefilesupdate.sh \

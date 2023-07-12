@@ -472,32 +472,6 @@ rsync $LATEXFILEPATH $VERYSIMPLEBOOKSABOUTSCIENCEPATH
 
 
 
-##############################
-# Synchronization of file "PhilBooks.bib"
-LATEXFILEPATH="$BIBLIOGRAPHYPATH/PhilBooks.bib"
-
-
-# Philosophy directory
-rsync $LATEXFILEPATH $PHILOSOPHYPATH
-
-
-##########
-# Mathematical analysis/calculus repository
-
-# rsync $LATEXFILEPATH $MATHEMATICALANALYSISPATH
-
-rsync $LATEXFILEPATH \
-      $MATHEMATICALANALYSISPATH/Analiza-zespolona-błędy-i-uwagi
-
-# rsync $LATEXFILEPATH \
-#       $MATHEMATICALANALYSISPATH/Rachunek-wariacyjny-błędy-i-uwagi
-
-##########
-
-##############################
-
-
-
 
 
 # ############################
@@ -722,8 +696,8 @@ rsync $LATEXFILEPATH $DRAWINGSANDCHARTSPATH/Matematyka-rysunki-i-wykresy
 # # Analysis and numerical methods directory
 # rsync $LATEXFILEPATH $ANALYSISANDNUMERICALMETHODSPATH
 
-# # Algebra path
-# rsync $LATEXFILEPATH $ALGEBRAPATH
+# Algebra path
+rsync $LATEXFILEPATH $ALGEBRAPATH
 
 # Arithmetics and number theory directory
 rsync $LATEXFILEPATH $ARITHMETICSANDNUMBERTHEORYPATH
