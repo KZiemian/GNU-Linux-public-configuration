@@ -49,7 +49,7 @@ CASIMIREFFECTPATH="$HOME/Efekt-Casimira-praca-przegladowa"
 DRAWINGSANDCHARTSPATH="$HOME/GitHub-repositories/Various-repositories/Rysunki-i-wykresy/"
 
 # Path to the directory of functional analysis repository
-FUNCTIONALANALYSISPATH="$ERRORSANDCOMMENTSPATH/Analiza-funkcjonalna-bledy-i-uwagi"
+FUNCTIONALANALYSISPATH="$WRITINGREPOPATH/Analiza-funkcjonalna-bledy-i-uwagi"
 
 # Path to the directory of mathematical analysis repository
 MATHEMATICALANALYSISPATH="$ERRORSANDCOMMENTSPATH/Analiza-matematyczna-bledy-i-uwagi"
@@ -172,13 +172,15 @@ CATEGORYTHEORYPATH="$MATHEMATICSPATH/Podstawy-matematyki-błędy-i-uwagi/Teoria-
 
 COMBINATORICSPATH="$MATHEMATICSPATH/Analiza-kombinatoryczna-błędy-i-uwagi"
 
-DIFFERENTIALEQUATIONSPATH="$MATHEMATICSPATH/Równania-różniczkowe-błędy-i-uwagi"
+ORDINARYDIFFERENTIALEQUATIONSPATH="$MATHEMATICSPATH/Równania-różniczkowe-zwyczajne-błędy-i-uwagi"
 
 DIFFERENTIALGEOMETRYPATH="$MATHEMATICSPATH/Geometria-różniczkowa-błędy-i-uwagi"
 
 LOGICANDSETTHEORYPATH="$MATHEMATICSPATH/Podstawy-matematyki-błędy-i-uwagi/Logika-i-teoria-mnogości-błędy-i-uwagi"
 
 NONCOMMUTATIVEGEOMETRYPATH="$MATHEMATICSPATH/Geometria-nieprzemienna-błędy-i-uwagi"
+
+PARTIALDIFFERENTIALEQUATIONSPATH="$MATHEMATICSPATH/Równania-różniczkowe-cząstkowe-błędy-i-uwagi"
 
 PROBABILTYTHEORYPATH="$MATHEMATICSPATH/Rachunek-prawdopodobieństwa-błędy-i-uwagi"
 
@@ -413,14 +415,13 @@ rsync $LATEXFILEPATH $CATEGORYTHEORYPATH
 # # Combinatorics directory
 # rsync $LATEXFILEPATH $COMBINATORICSPATH
 
-# Differential equations directory
-rsync $LATEXFILEPATH $DIFFERENTIALEQUATIONSPATH
-
+# Differential geometry directory
 # rsync $LATEXFILEPATH $DIFFERENTIALGEOMETRYPATH
 
-# rsync $LATEXFILEPATH $FUNCTIONALANALYSISPATH
+# Functional analysis directory
+rsync $LATEXFILEPATH $FUNCTIONALANALYSISPATH
 
-# # Logic and set theory directory
+# Logic and set theory directory
 # rsync $LATEXFILEPATH $LOGICANDSETTHEORYPATH
 
 # # Books with mathematical exercises directory
@@ -431,7 +432,7 @@ rsync $LATEXFILEPATH $DIFFERENTIALEQUATIONSPATH
 
 
 ##########
-# Mathematical analysis/calculus repository
+# Mathematical analysis/calculus repositories
 
 rsync $LATEXFILEPATH $MATHEMATICALANALYSISPATH
 
@@ -444,11 +445,19 @@ rsync $LATEXFILEPATH \
 ##########
 
 
+# Ordinay differential equations directory
+rsync $LATEXFILEPATH $ORDINARYDIFFERENTIALEQUATIONSPATH
+
+# Noncommutative geometry directory
 # rsync $LATEXFILEPATH $NONCOMMUTATIVEGEOMETRYPATH
 
+# Probability theory directory
 # rsync $LATEXFILEPATH $PROBABILTYTHEORYPATH
 
-# # Set theory and topology directory
+# Partial differential equations directory
+rsync $LATEXFILEPATH $PARTIALDIFFERENTIALEQUATIONSPATH
+
+# Set theory and topology directory
 # rsync $LATEXFILEPATH $SETTHEORYANDTOPOLOGYPATH
 ####################
 
@@ -462,11 +471,11 @@ rsync $LATEXFILEPATH $VERYSIMPLEBOOKSABOUTSCIENCEPATH
 
 
 # ####################
-# # Synchronization of file "MusicBooks.bib"
+# Synchronization of file "MusicBooks.bib"
 # LATEXFILEPATH="$BIBLIOGRAPHYPATH/MusicBooks.bib"
 
 
-# # Culture, analytics works directory
+# Culture, analytics works directory
 # rsync $LATEXFILEPATH $CULTUREANALYSISPATH
 # ####################
 
@@ -507,9 +516,9 @@ LATEXFILEPATH="$BIBLIOGRAPHYPATH/PhysicsBooks.bib"
 
 
 # ##########
-# # Mathematical directories
+# Mathematical directories
 
-# # Functional analysis directory
+# Functional analysis directory
 # rsync $LATEXFILEPATH $FUNCTIONALANALYSISPATH
 # ##########
 
@@ -560,7 +569,7 @@ rsync $LATEXFILEPATH $ANALYSISOFEXPERIMENTALDATA
 
 
 
-# # Very simple books about science directory
+# Very simple books about science directory
 # rsync $LATEXFILEPATH $VERYSIMPLEBOOKSABOUTSCIENCEPATH
 
 
