@@ -371,7 +371,7 @@ rsync $LATEXFILEPATH $HISTORYPATH
 
 
 ##############################
-# Synchronization of file "MathComScienceBooks.bib"
+# Synchronization of file "MathematicsBooks.bib"
 LATEXFILEPATH="$BIBLIOGRAPHYPATH/MathematicsBooks.bib"
 
 
@@ -811,9 +811,9 @@ LATEXFILEPATH="$BIBLIOGRAPHYPATH/PhysicsArticles.bib"
 
 
 # ##########
-# # Mathematical directories
+# Mathematical directories
 
-# # Functional analysis directory
+# Functional analysis directory
 # rsync $LATEXFILEPATH $FUNCTIONALANALYSISPATH
 # ##########
 
@@ -825,22 +825,22 @@ LATEXFILEPATH="$BIBLIOGRAPHYPATH/PhysicsArticles.bib"
 # Analysis of experimatal data directory
 # rsync $LATEXFILEPATH $ANALYSISOFEXPERIMENTALDATA
 
-# # Introductions to physics directory
-# rsync $LATEXFILEPATH $INTRODUCTIONSTOPHYSICSPATH
-
-# # Clerk Maxwell electrodynamics
+# Clerk Maxwell electrodynamics
 # rsync $LATEXFILEPATH $CLERKMAXWELLELECTRODYNAMICSPATH
 
-# # Condensed matter physics path
+# Condensed matter physics path
 # rsync $LATEXFILEPATH $CONDENSEDMATTERPHYSICSPATH
 
-# # Mathematical physics directory
+# Introductions to physics directory
+# rsync $LATEXFILEPATH $INTRODUCTIONSTOPHYSICSPATH
+
+# Mathematical physics directory
 # rsync $LATEXFILEPATH $MATHEMATICALPHYSICSPATH
 
 # Newtonian mechanics directory
 # rsync $LATEXFILEPATH $NEWTONIANMECHANICSPATH
 
- # Physics and other disciplines directory
+# Physics and other disciplines directory
 # rsync $LATEXFILEPATH $PHYSICSANDOTHERDISCIPLINESPATH
 
 # # Physics excercises directory

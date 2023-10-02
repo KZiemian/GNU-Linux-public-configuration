@@ -113,7 +113,7 @@ COMPUTERSCIENCEEXERCISESPATH="$EXERCISESLISTSPATH/Informatyka-listy-zadań"
 
 
 ####################
-# Culture, analytics works path
+# Culture analytics works path
 
 CULTUREANALYSISPATH="$VARIOUSSCIENCESPATH/Pozostałe-dziedziny-błędy-i-uwagi/Kultura-błędy-i-uwagi"
 ####################
@@ -171,13 +171,13 @@ CATEGORYTHEORYPATH="$MATHEMATICSPATH/Podstawy-matematyki-błędy-i-uwagi/Teoria-
 
 COMBINATORICSPATH="$MATHEMATICSPATH/Analiza-kombinatoryczna-błędy-i-uwagi"
 
-ORDINARYDIFFERENTIALEQUATIONSPATH="$MATHEMATICSPATH/Równania-różniczkowe-zwyczajne-błędy-i-uwagi"
-
 DIFFERENTIALGEOMETRYPATH="$MATHEMATICSPATH/Geometria-różniczkowa-błędy-i-uwagi"
 
 LOGICANDSETTHEORYPATH="$MATHEMATICSPATH/Podstawy-matematyki-błędy-i-uwagi/Logika-i-teoria-mnogości-błędy-i-uwagi"
 
 NONCOMMUTATIVEGEOMETRYPATH="$MATHEMATICSPATH/Geometria-nieprzemienna-błędy-i-uwagi"
+
+ORDINARYDIFFERENTIALEQUATIONSPATH="$MATHEMATICSPATH/Równania-różniczkowe-zwyczajne-błędy-i-uwagi"
 
 PARTIALDIFFERENTIALEQUATIONSPATH="$MATHEMATICSPATH/Równania-różniczkowe-cząstkowe-błędy-i-uwagi"
 
@@ -256,6 +256,7 @@ PHYSICSEXERCISESPATH="$EXERCISESLISTSPATH/Fizyka-listy-zadań"
 
 #####################
 # Politology directory path
+
 POLITOLOGYPATH="$VARIOUSSCIENCESPATH/Pozostałe-dziedziny-błędy-i-uwagi/Politologia-błędy-i-uwagi"
 ####################
 
@@ -532,6 +533,9 @@ rsync $LATEXFILEPATH $PHILOSOPHYPATH
 
 # Algorithms directory
 rsync $LATEXFILEPATH $ALGORITHMSPATH
+
+# # Computer science excercises path
+# rsync $LATEXFILEPATH $COMPUTERSCIENCEEXERCISESPATH
 
 # Theory of computation directory
 # rsync $LATEXFILEPATH $THEORYOFCOMPUTATIONPATH
