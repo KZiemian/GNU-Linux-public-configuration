@@ -406,13 +406,16 @@ rsync $LATEXFILEPATH $ALGEBRAPATH
 # # Arithmetics and number theory directory
 # rsync $LATEXFILEPATH $ARITHMETICSANDNUMBERTHEORYPATH
 
+# Books with mathematical exercises directory
+# rsync $LATEXFILEPATH $MATHBOOKSWITHEXERCISESPATH
+
 # Automata and formal languages theory directory
 rsync $LATEXFILEPATH $AUTOMATAANDFORMALLANGUAGESTHEORYPATH
 
 # Category theory directory
 rsync $LATEXFILEPATH $CATEGORYTHEORYPATH
 
-# # Combinatorics directory
+# Combinatorics directory
 # rsync $LATEXFILEPATH $COMBINATORICSPATH
 
 # Differential geometry directory
@@ -424,11 +427,12 @@ rsync $LATEXFILEPATH $FUNCTIONALANALYSISPATH
 # Logic and set theory directory
 # rsync $LATEXFILEPATH $LOGICANDSETTHEORYPATH
 
-# # Books with mathematical exercises directory
-# rsync $LATEXFILEPATH $MATHBOOKSWITHEXERCISESPATH
-
-# # Math excercises directory
+# Math excercises directory
 # rsync $LATEXFILEPATH $MATHEXERCISESPATH
+
+# Probability theory directory
+rsync $LATEXFILEPATH $PROBABILTYTHEORYPATH
+
 
 
 ##########
